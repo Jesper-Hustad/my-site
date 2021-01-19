@@ -1,44 +1,32 @@
 {
-  "name": "node_express_pug_boilerplate",
+  "name": "my-site",
   "version": "1.0.0",
-  "description": "A boilerplate, opinionated template for quickly prototyping nodejs applications. No fancy Webpack, grunt, gulp, etc. you'll have to add that in. This is for rapid prototyping and not for BUILDING apps, look up tutorial on how to do that :) Enjoy!",
+  "description": "Node.js application boilerplate for rapid prototyping and development.",
   "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "start": "npm start"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abhinayar/NodeExpressPugBoilerplate.git"
+    "url": "git+https://github.com/Jesper-Hustad/my-site.git"
   },
-  "keywords": [
-    "node",
-    "js",
-    "boilerplate",
-    "express",
-    "pug",
-    "rapid",
-    "prototype",
-    "abhi",
-    "nayar",
-    "anayar"
-  ],
-  "author": "Abhi Nayar",
-  "license": "ISC",
+  "author": "Jesper",
+  "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/abhinayar/NodeExpressPugBoilerplate/issues"
+    "url": "https://github.com/Jesper-Hustad/my-site/issues"
   },
-  "homepage": "https://github.com/abhinayar/NodeExpressPugBoilerplate#readme",
+  "homepage": "https://github.com/Jesper-Hustad/my-site#readme",
   "dependencies": {
-    "body-parser": "^1.17.2",
-    "compression": "^1.7.0",
+    "body-parser": "^1.19.0",
     "connect-timeout": "^1.9.0",
-    "cookie-parser": "^1.4.3",
-    "dotenv": "^4.0.0",
-    "express": "^4.15.4",
-    "express-session": "^1.15.5",
-    "morgan": "^1.8.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
     "path": "^0.12.7",
-    "pug": "^2.0.0-rc.3",
-    "serve-favicon": "^2.4.3"
+    "pug": "^3.0.0",
+    "serve-favicon": "^2.5.0"
   }
 }

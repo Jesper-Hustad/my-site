@@ -4,7 +4,7 @@ var router = express.Router();
 
 // setup routing
 router.get('/', function(req, res, next) {
-  res.render('base', {})
+  res.render('main', {})
 })
 
 // export the module
