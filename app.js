@@ -30,17 +30,18 @@ app.use('/', routes);
 
 // error catching
 // stacktrace in dev., dislay error page in prod
-app.use(function (req, res, next) {
-  var err = new Error('Not Found');
-  err.status = 404;
-  next(err);
-});
+// app.use(function (req, res, next) {
+  
+//   var err = new Error('Not Found');
+//   err.status = 404;
+//   next(err);
+// });
 
-app.use(function (err, req, res, next) { // eslint-disable-line no-unused-vars
-  res.status(err.status || 404);
-  console.log('error', err);
-  res.render('error', {});
-});
+// app.use(function (err, req, res, next) {
+//   res.status(err.status || 404);
+//   console.log('error', err);
+//   res.render('error', {});
+// });
 
 // serve the app on PORT variable
 var server = app.listen(port, function(err) {

@@ -1,3 +1,7 @@
+mixin emoji(emoji_name)
+    img(src="/images/emoji/" + emoji_name, alt="")
+
+
 <!DOCTYPE html>
 html(lang="en")
   head
@@ -24,41 +28,33 @@ html(lang="en")
     //
     block fontFiles
       // Roboto Google Font
-      link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Roboto:100,300,700')
+      //- link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Roboto:100,300,700')
 
     //
     // css
     //
     block externalCSS
-      // NormalizeCSS
-      link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css')
-      // bootstrap 4
-      link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css', integrity='sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ', crossorigin='anonymous')
       // local load scripts (replace ^^ with these if you dont have a network connection)
-      //
-        link(rel='stylesheet', href='/fonts/fonts.css')
-        link(rel='stylesheet', href='/css/vendor/normalize.min.css')
-        link(rel='stylesheet', href='/css/vendor/bootstrap.min.css')
+      //- link(rel='stylesheet' href='https://unpkg.com/98.css')
+      link(rel='stylesheet', href='/css/vendor/98.css')
+
     block localCSS
       // local css
-      // preloaded CSS to reduce FOUC
-      link(rel='prefetch alternate stylesheet', href='/css/prefetch.css')
       // main page CSS
       link(rel='stylesheet', href='/css/main.css')
+      link(rel='stylesheet', href='/css/wordart.css')
   body
     block body
       h1 Here is a heading
       p Look a cool paragraph
 
+    block footer
+      br
+      hr
+      p © Copyright 2021
+
     block externalScripts
-      script(src='/js/vendor/console-shim.js') // prevent console errors in old browsers
-      // Modernizr
-      script(src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js")
-      // jQuery 2.2.4 (use whatever version you want)
-      script(src='//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js')
-      // Local Load Scripts
-      //
-        script(src='/js/vendor/modernizr-2.6.2.min.js')
-        script(src='/js/vendor/jquery-2.2.4.min.js')
+
+
     block localScripts
       script(src='/js/main.js')

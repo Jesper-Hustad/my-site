@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Jesper-Hustad/my-site#readme",
   "dependencies": {
+    "98.css": "^0.1.16",
     "body-parser": "^1.19.0",
     "connect-timeout": "^1.9.0",
     "dotenv": "^8.2.0",
