@@ -14,7 +14,7 @@ require('dotenv').config(); // loads CONFIG variables from the .env top-level fi
 
 // app internal setup
 var app = express(); // sets app to use express
-app.set('views', path.join(__dirname, 'views')); // sets up view directory
+app.set('views', [path.join(__dirname, 'views'),path.join(__dirname, '/views/pages')]); // sets up view directory
 app.set('view engine', 'pug'); // sets view engine to use pug
 app.use(favicon(path.join(__dirname, 'public', 'images', 'icons', 'favicon-96.png'))); // sets favicon path
 app.use(logger('dev')); // uses morgan/logger to log output to terminal

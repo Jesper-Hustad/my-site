@@ -13,6 +13,7 @@ router.get('/projects', function(req, res, next) {
 
 router.get('/page/:name', function(req, res, next) {
   console.log(req.params.name)
+
   res.render(req.params.name, {})
 })
 

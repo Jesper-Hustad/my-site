@@ -10,12 +10,12 @@ block body
     h2 Jesper Hustad's Website!
     p I'm Jesper Hustad. I am currently studying for a bachelor's degree majoring in Computer Science at the university NTNU. #[+emoji("msn_nerd.gif")]
 
-    p This page is dedicated to the Old Internet style, to appriciate how far we've come you gotta understand how it all started. With the Times New Roman, colored background gradients, and the old AIM / MSN emoji. #[+emoji("yahoo_love.gif")]
+    p This page is dedicated to the Old Internet style, to appriciate how far we've come you gotta understand how it all started. With the Times New Roman, colored background gradients, and the old AIM / MSN emoji i hope to capture that classic look. #[+emoji("yahoo_love.gif")]
 
     p Currently i am focused on learning about websites and servers. Learning to work in the terminal, databases, user accounts, security, frontend, etc a lot of things to learn.
     p You can see some project i have been working on by visiting my. #[a(href="https://github.com/Jesper-Hustad") GitHub page]
     
-
+    img https://motherboard-images.vice.com/content-images/contentimage/26327/1444070256569233.gif
     h3 Topics
     br
     h4 Posts
