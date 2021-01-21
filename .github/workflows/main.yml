@@ -29,7 +29,7 @@ jobs:
         uses: cross-the-world/ssh-pipeline@v1.2.0
         with:
           # ssh remote host
-          host: jesperhustad.comTssh-pipelineT
+          host: jesperhustad.com
           # ssh remote port
           #port: # optional, default is 22
           # ssh remote user
