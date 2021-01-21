@@ -1,8 +1,10 @@
 mixin emoji(emoji_name)
     img(src="/images/emoji/" + emoji_name, alt="")
 
-mixin image(url)
-    img(src="url")
+mixin image(url, size=20)
+    .window(style="max-width:" + size + "rem;")
+        .window-body
+            img(src="/images/" + url, alt="", style="height: 100%;width: 100%;object-fit: contain;")
 
 
 <!DOCTYPE html>
